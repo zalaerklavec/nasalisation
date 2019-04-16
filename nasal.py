@@ -15,9 +15,3 @@ def write_to_file(line):
 conn = db.connection()
 
 a = db.Language.get(db.Language.name == 'Hungarian')
-b = db.Language.select().where(db.Language.name.contains('arian'))
-
-print(type(a))  # Language
-print(type(b))  # ModelSelect
-
-print(b.count())
